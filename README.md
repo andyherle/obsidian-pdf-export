@@ -32,7 +32,7 @@ npm run package
 
 The source branch does not commit generated `main.js`. A release builds and publishes the standard Obsidian files: `main.js`, `manifest.json`, and `styles.css`.
 
-The plugin is desktop-only because PDF output uses the Electron runtime that is already part of Obsidian. It does not start an external browser, Python process, shell command, or network service.
+The plugin is desktop-only because PDF output uses the Electron runtime that is already part of Obsidian. The initial release targets Obsidian 1.12.7 or newer. It does not start an external browser, Python process, shell command, or network service.
 
 ## License
 

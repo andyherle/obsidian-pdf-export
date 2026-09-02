@@ -1,6 +1,6 @@
 {
   "name": "document-pdf-exporter",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "private": true,
   "description": "Build one ordered PDF from notes, PDFs, and images with direct control over sections and page order.",
   "main": "main.js",
@@ -12,16 +12,11 @@
     "validate": "npm run audit && npm test && node scripts/validate-release.js && node scripts/smoke-bundle.js",
     "package": "node scripts/build.js && node scripts/validate-release.js && node scripts/package.js"
   },
-  "keywords": [
-    "obsidian",
-    "pdf",
-    "export",
-    "markdown",
-    "document"
-  ],
+  "keywords": ["obsidian", "pdf", "export", "markdown", "document"],
   "author": "Contributors",
   "license": "MIT",
-  "engines": {
-    "node": ">=22"
-  }
+  "engines": {"node": ">=22"},
+  "repository": {"type": "git", "url": "git+https://github.com/andyherle/obsidian-pdf-export.git"},
+  "bugs": {"url": "https://github.com/andyherle/obsidian-pdf-export/issues"},
+  "homepage": "https://github.com/andyherle/obsidian-pdf-export#readme"
 }

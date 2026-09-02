@@ -1,8 +1,8 @@
 {
   "id": "document-pdf-exporter",
   "name": "Document PDF Exporter",
-  "version": "1.0.2",
-  "minAppVersion": "1.13.4",
+  "version": "1.0.0",
+  "minAppVersion": "1.12.7",
   "description": "Build one ordered PDF from notes, PDFs, and images with direct control over sections and page order.",
   "author": "Contributors",
   "isDesktopOnly": true
