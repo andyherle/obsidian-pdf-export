@@ -1,0 +1,17 @@
+name: Feature request
+description: Propose one focused improvement.
+title: "[Feature] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Explain the export problem before describing a solution.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Required outcome
+    validations:
+      required: true

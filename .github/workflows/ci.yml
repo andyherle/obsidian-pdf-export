@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run validate
+      - run: npm run package
+      - name: Upload install package
+        uses: actions/upload-artifact@v6
+        with:
+          name: document-pdf-exporter-${{ github.sha }}
+          path: dist/document-pdf-exporter-*.zip
+          if-no-files-found: error

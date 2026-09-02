@@ -1,0 +1,36 @@
+name: Bug report
+description: Report a repeatable Document PDF Exporter problem.
+title: "[Bug] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Plugin version
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: obsidian
+    attributes:
+      label: Obsidian and operating system
+      placeholder: Obsidian 1.x on macOS, Windows, or Linux
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Use the smallest source set that shows the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected and actual result
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: Error text
+      description: Copy the complete error from the plugin.
